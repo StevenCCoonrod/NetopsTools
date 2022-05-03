@@ -1,0 +1,408 @@
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:57:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SSHAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SSHAccessUtilities.cs:line 89
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Feb 3 16:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 89
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Apr 8 00:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There is an error accessing the Mtr data in the DB.
+Unable to cast object of type 'System.Double' to type 'System.Byte'.
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 03:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed Mar 2 19:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

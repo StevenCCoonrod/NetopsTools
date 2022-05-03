@@ -1,0 +1,174 @@
+﻿<Window x:Class="WPFPresentationLayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFPresentationLayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200" Background="#BB102040" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <Style x:Key="dataGridStyle1" TargetType="DataGrid">
+            <Setter Property="ColumnHeaderStyle" Value="{DynamicResource ColumnHeaderStyle1}" />
+        </Style>
+        <Style x:Key="ColumnHeaderStyle1" TargetType="DataGridColumnHeader">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Background" Value="AliceBlue"/>
+            <Setter Property="Foreground" Value="#FF020220"/>
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"></RowDefinition>
+                <RowDefinition Height="75*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"></ColumnDefinition>
+                    <ColumnDefinition Width="50*"></ColumnDefinition>
+                    <ColumnDefinition Width="25*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                    <RowDefinition Height="25*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="2" Grid.RowSpan="3" Margin="10" FontSize="12"
+                       Background="AliceBlue" TextWrapping="Wrap"
+                       Text="These buttons retrieve data through SSH and inserts it into the SQL DB">
+                </TextBlock>
+                
+                <Label Grid.Row="0" Grid.Column="0" Foreground="LightGray" FontSize="16" 
+                    VerticalAlignment="Center" HorizontalAlignment="Right" Content="Station ID">
+                </Label>
+                <TextBox x:Name="txtStationId" 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    Height="25" 
+                    VerticalAlignment="Center"
+                    Background="AliceBlue" 
+                    Margin="3, 0, 3, 0"></TextBox>
+                <Label Grid.Row="1" Grid.Column="0" Foreground="LightGray" FontSize="16" 
+                    VerticalAlignment="Center" HorizontalAlignment="Right">Start Date</Label>
+                <DatePicker x:Name="dateStart" Grid.Column="1" Grid.Row="1" BorderBrush="Transparent"
+                    VerticalAlignment="Center"></DatePicker>
+                <Label Grid.Row="2" Grid.Column="0" Foreground="LightGray" FontSize="16" 
+                    VerticalAlignment="Center" HorizontalAlignment="Right">End Date</Label>
+                <DatePicker x:Name="dateEnd" Grid.Column="1" Grid.Row="2" BorderBrush="Transparent"
+                    VerticalAlignment="Center"></DatePicker>
+
+                <Button x:Name="btnGetData" 
+                    Grid.Column="0" 
+                    Grid.Row="3" 
+                    Margin="5"
+                    Click="btnGetData_Click">Get Data</Button>
+                <Button x:Name="btnGetNewestMtr" 
+                    Grid.Column="1" 
+                    Grid.Row="3" 
+                    Margin="5"
+                    Click="btnGetNewestMtr_Click">Get Most Recent MTR</Button>
+                <Button x:Name="btnGetAllNewMtrs" 
+                    Grid.Column="2" 
+                    Grid.Row="3"
+                    Margin="5"
+                    Click="btnGetAllNewMtrs_Click"
+                    Background="#BBEE3030">ALL new Mtrs</Button>
+            </Grid>
+
+            <TextBox x:Name="txtDataReturned" 
+                     IsReadOnly="True"
+                     Grid.Row="1" 
+                     Background="#FF020220"
+                     Foreground="AliceBlue" 
+                     FontSize="10" 
+                     Margin="5"
+                     VerticalScrollBarVisibility="Auto"
+                     TextWrapping="WrapWithOverflow">
+            </TextBox>
+        </Grid>
+
+
+        <Grid Grid.Column="2" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="cboSyncboxes" Grid.Column="0"
+                      Height="30" FontSize="14" IsTextSearchEnabled="True"
+                      SelectionChanged="cboSyncboxes_SelectionChanged"></ComboBox>
+
+            <Button x:Name="btnUpdateDataGrid_AllMtrs" Grid.Column="1" 
+                    Height="30" Width="60" HorizontalAlignment="Left" Margin="10 0 0 0"
+                    Content="All Mtrs" Click="btnUpdateDataGrid_AllMtrs_Click"></Button>
+            
+        </Grid>
+        
+        
+        
+        <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4" Grid.RowSpan="4">
+            <DataGrid x:Name="lstMtrData" Margin="5" Background="#FF020220" Foreground="AliceBlue"
+                      FontSize="14" FontWeight="DemiBold" FontFamily="Helvetica" RowHeaderWidth="0"
+                      CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" RowBackground="#FF020220"
+                      SelectionMode="Single" IsTextSearchEnabled="True" AutoGenerateColumns="False"
+                      Style="{DynamicResource dataGridStyle1}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Syncbox" Binding="{Binding SyncboxID}" />
+                    <DataGridTemplateColumn x:Name="reportCol" Header="Mtr Reports">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ListView x:Name="lstSyncboxReports">
+                                    <ListViewItem Content="{Binding UTCStartTime}" ></ListViewItem>
+                                    
+                                </ListView>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <!--<DataGridTextColumn Header="Start Time" Binding="{Binding UTCStartTime}" /> -->
+                </DataGrid.Columns>
+                
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <ListView ItemsSource="{Binding Hops}" Margin="10" Background="#FF020220" Foreground="AliceBlue">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Hop #" DisplayMemberBinding="{Binding HopNum}" Width="50"></GridViewColumn>
+                                    <GridViewColumn Header="Host " DisplayMemberBinding="{Binding Host}"></GridViewColumn>
+                                    <GridViewColumn Header="% Loss" DisplayMemberBinding="{Binding PacketLoss}" Width="50"></GridViewColumn>
+                                    <GridViewColumn Header="Last " DisplayMemberBinding="{Binding LastPingMS}" Width="50"></GridViewColumn>
+                                    <GridViewColumn Header=" Avg " DisplayMemberBinding="{Binding AvgPingMS}" Width="50"></GridViewColumn>
+                                    <GridViewColumn Header="Best " DisplayMemberBinding="{Binding BestPingMS}" Width="50"></GridViewColumn>
+                                    <GridViewColumn Header="Worst" DisplayMemberBinding="{Binding WorstPingMS}" Width="50"></GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
+            </DataGrid>
+            
+        </Grid>
+    </Grid>
+    
+</Window>
