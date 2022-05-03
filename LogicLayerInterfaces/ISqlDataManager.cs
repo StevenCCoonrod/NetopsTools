@@ -7,6 +7,11 @@ using DataObjects;
 
 namespace LogicLayerInterfaces
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/26
+    /// Interface for the Sql Data Manager.
+    /// </summary>
     public interface ISqlDataManager
     {
         List<MtrReport> GetAllMtrs();

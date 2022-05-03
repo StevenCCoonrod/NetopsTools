@@ -59,20 +59,29 @@
                        Text="These buttons retrieve data through SSH and inserts it into the SQL DB">
                 </TextBlock>
                 
-                <Label Grid.Row="0" Grid.Column="0" Foreground="LightGray" FontSize="16" 
+                <Label x:Name="lblStationIDError" Grid.Row="0" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
+                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
+                <Label x:Name="lblStationID" Grid.Row="0" Grid.Column="0" Foreground="LightGray" FontSize="16" 
                     VerticalAlignment="Center" HorizontalAlignment="Right" Content="Station ID">
                 </Label>
-                <TextBox x:Name="txtStationId" 
+                <ComboBox x:Name="cboStationId" 
                     Grid.Row="0" 
                     Grid.Column="1" 
                     Height="25" 
                     VerticalAlignment="Center"
                     Background="AliceBlue" 
-                    Margin="3, 0, 3, 0"></TextBox>
+                    IsTextSearchEnabled="True"
+                    Margin="3, 0, 3, 0"></ComboBox>
+                
+                <Label x:Name="lblStartDateError" Grid.Row="1" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
+                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
                 <Label Grid.Row="1" Grid.Column="0" Foreground="LightGray" FontSize="16" 
                     VerticalAlignment="Center" HorizontalAlignment="Right">Start Date</Label>
                 <DatePicker x:Name="dateStart" Grid.Column="1" Grid.Row="1" BorderBrush="Transparent"
                     VerticalAlignment="Center"></DatePicker>
+                
+                <Label x:Name="lblEndDateError" Grid.Row="0" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
+                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
                 <Label Grid.Row="2" Grid.Column="0" Foreground="LightGray" FontSize="16" 
                     VerticalAlignment="Center" HorizontalAlignment="Right">End Date</Label>
                 <DatePicker x:Name="dateEnd" Grid.Column="1" Grid.Row="2" BorderBrush="Transparent"

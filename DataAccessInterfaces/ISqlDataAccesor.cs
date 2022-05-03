@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessInterfaces
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/26
+    /// Interface for the Sql Data Accessor
+    /// </summary>
     public interface ISqlDataAccesor
     {
         bool InsertNewMtrReport(MtrReport report);

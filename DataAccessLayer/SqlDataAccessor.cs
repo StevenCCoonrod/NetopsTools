@@ -10,8 +10,20 @@ using Microsoft.Data.SqlClient;
 
 namespace DataAccessLayer
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/26
+    /// This is the Data Access Class for the SQL Server Database
+    /// Holds methods to call stored procedures for DB CRUD functions
+    /// </summary>
     public class SqlDataAccessor : ISqlDataAccesor
     {
+        /// <summary>
+        /// Method for inserting a list of MtrHops to the MtrHop DB table
+        ///     Stored procedure returns each MtrHop's ID
+        /// </summary>
+        /// <param name="hops"></param>
+        /// <returns></returns>
         public bool InsertMtrHops(List<MtrHop> hops)
         {
             bool successfulInsert = false;
@@ -44,7 +56,6 @@ namespace DataAccessLayer
                 cmd.Parameters["@WorstPingMS"].Value = hop.WorstPingMS;
                 cmd.Parameters["@StandardDev"].Value = hop.StDev;
 
-
                 try
                 {
                     conn.Open();
@@ -67,11 +78,15 @@ namespace DataAccessLayer
                     conn.Close();
                 }
             }
-            
-
             return successfulInsert;
         }
 
+        /// <summary>
+        /// Method for inserting an MtrReport to the MtrReport DB table
+        ///     Stored procedure returns the MtrHop's ID
+        /// </summary>
+        /// <param name="report"></param>
+        /// <returns></returns>
         public bool InsertNewMtrReport(MtrReport report)
         {
             bool successfulInsert = false;
@@ -110,6 +125,12 @@ namespace DataAccessLayer
             return successfulInsert;
         }
 
+        /// <summary>
+        /// Method for inserting a record containing the MtrReportID and MtrHopID for each hop of a given report.
+        ///     This is added to the ReportHops DB table
+        /// </summary>
+        /// <param name="report"></param>
+        /// <returns></returns>
         public bool InsertNewReportHops(MtrReport report)
         {
             bool successfulInsert = false;
@@ -146,14 +167,15 @@ namespace DataAccessLayer
                     conn.Close();
                 }
             }
-            
             return successfulInsert;
-
         }// End InsertNewReportHops method
 
-
         //  Retrieval/Select Methods
-
+        /// <summary>
+        /// Method to return a List of all the MtrReports in the DB
+        /// **** With enough data this will probably not be a good idea ****
+        /// </summary>
+        /// <returns></returns>
         public List<MtrReport> GetAllMtrs()
         {
             List<MtrReport> mtrReports = new List<MtrReport>();

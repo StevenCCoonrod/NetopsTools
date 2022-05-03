@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
+    /// Data Object class for an Mtr Hop
+    /// </summary>
     public class MtrHop
     {
         public int MtrHopID { get; set; }

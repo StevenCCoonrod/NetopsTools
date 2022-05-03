@@ -7,6 +7,12 @@ using System.Windows;
 
 namespace LogicLayer
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
+    /// This is the data manager for retrieving data via the SSH Data Accessor,
+    ///     and inserting the aquired data into the Sql DB via the Sql Data Accessor.
+    /// </summary>
     public class SshDataManager : ISshDataManager
     {
         private ISshDataAccessor _sshDataAccessor;
@@ -18,39 +24,6 @@ namespace LogicLayer
             _sqlDataAccesor = new SqlDataAccessor();
         }
         
-        /// <summary>
-        /// TESTING METHOD: Uses hardcoded file path in command
-        /// Retrieves an Mtr via SSH and can insert the MtrReport data into the SQL Server DB via the SqlServerDataAccessor
-        /// </summary>
-        /// <param name="sendToDB"></param> To allow adding the data to the DB to be optional
-        /// <returns></returns>
-        /// <exception cref="ArgumentException"></exception>
-        public MtrReport GetMtrReport(bool sendToDB)
-        {
-            MtrReport report = new MtrReport();
-
-            try
-            {   
-                report = _sshDataAccessor.GetMtrReport();
-                if (sendToDB)
-                {
-                    bool successful = _sqlDataAccesor.InsertNewMtrReport(report);
-                    if (!successful)
-                    {
-                        throw new Exception("Attempt to insert Mrt Report into database failed.");
-                    }
-
-                }
-            }catch(Exception ex)
-            {
-                throw new ArgumentException("Unable to retrieve Mtr data.\n\n", ex);
-            }
-
-            return report;
-        }
-
-        
-
         /// <summary>
         /// Retrieves an Mtr via SSH and Inserts the MtrReport data into the SQL Server DB via the SqlServerDataAccessor
         /// Takes a bool to allow adding the data to the DB to be optional
@@ -115,7 +88,7 @@ namespace LogicLayer
 
             return report;
 
-        }
+        }// END GetNewestMtrReport()
         
         /// <summary>
         /// Retrieves a list of all the syncboxes that have a directory in the SSH Mtr directory for the current date.
@@ -126,5 +99,36 @@ namespace LogicLayer
         {
             return _sshDataAccessor.GetAllSyncboxes();
         }
+        
+        /// <summary>
+        /// ****TESTING METHOD**** Uses hardcoded file path in command
+        /// Retrieves an Mtr via SSH and can insert the MtrReport data into the SQL Server DB via the SqlServerDataAccessor
+        /// </summary>
+        /// <param name="sendToDB"></param> To allow adding the data to the DB to be optional
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
+        public MtrReport GetMtrReport(bool sendToDB)
+        {
+            MtrReport report = new MtrReport();
+
+            try
+            {   
+                report = _sshDataAccessor.GetMtrReport();
+                if (sendToDB)
+                {
+                    bool successful = _sqlDataAccesor.InsertNewMtrReport(report);
+                    if (!successful)
+                    {
+                        throw new Exception("Attempt to insert Mrt Report into database failed.");
+                    }
+
+                }
+            }catch(Exception ex)
+            {
+                throw new ArgumentException("Unable to retrieve Mtr data.\n\n", ex);
+            }
+
+            return report;
+        }// END GetMtrReport()
     }
 }

@@ -7,6 +7,11 @@ using DataObjects;
 
 namespace DataAccessInterfaces
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
+    /// Interface for the Ssh Data Accessor
+    /// </summary>
     public interface ISshDataAccessor
     {
         List<string> GetAllSyncboxes();

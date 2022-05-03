@@ -7,6 +7,11 @@ using DataObjects;
 
 namespace LogicLayerInterfaces
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
+    /// Interface for the Ssh Data Manager.
+    /// </summary>
     public interface ISshDataManager
     {
         List<string> GetAllSyncboxes();

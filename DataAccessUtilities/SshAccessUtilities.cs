@@ -9,23 +9,36 @@ using System.Windows;
 
 namespace DataAccessUtilities
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
+    /// This holds utility methods for the SSH Data Accessor.
+    ///     SSH connection information
+    ///     Parsing of SSH command output into data objects
+    /// </summary>
     public static class SshAccessUtilities
     {
+        //Connection Info
         public static string _host = "master3.syncbak.com";
         public static string _user = "usernameGoesHere";
         public static string _pass = "passwordGoesHere";
         public static string _rootMtrDirectory = "/var/log/syncbak/catcher-mtrs";
 
-
-        
-
-
+        /// <summary>
+        /// This method initiates parsing an Mtr string and returns an MtrReport
+        ///     Determines the type of MTR based on starting line
+        ///     Depending on the type, sends the rest of the parsing to be done in secondary method
+        /// </summary>
+        /// <param name="mtrDataString"></param>
+        /// <param name="datetime"></param>
+        /// <returns></returns>
         public static MtrReport parseSshStringIntoMtrReport(string mtrDataString, DateTime datetime)
         {
             MtrReport report = new MtrReport();
             //Split the string returned into a list of lines to parse
             List<string> linesInReport = mtrDataString.Split('\n', StringSplitOptions.RemoveEmptyEntries).ToList();
 
+            // Determine Standard or No-Start parsing
             if (linesInReport[0].Contains("START") || linesInReport[0].Contains("Start"))
             {
                 report = StandardMtrParse(report, linesInReport);
@@ -39,6 +52,13 @@ namespace DataAccessUtilities
             return report;
         }// END METHOD : parseSshStringIntoMtrReport
 
+        /// <summary>
+        /// Secondary method that handles parsing the MtrHop data into the MtrReport's Hops List
+        /// </summary>
+        /// <param name="report"></param>
+        /// <param name="linesInReport"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         private static MtrReport NoStartMtrParse(MtrReport report, List<string> linesInReport)
         {
             try
@@ -56,6 +76,7 @@ namespace DataAccessUtilities
                     string[] delimiters = { " ", "\t" };
                     MtrHop hop = new MtrHop();
                     List<string> fields = trueLine.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).ToList();
+
                     string hopNum = fields[0];
                     hopNum = hopNum.Split('.').ElementAt(0);
                     hop.HopNum = byte.Parse(hopNum);
@@ -78,6 +99,13 @@ namespace DataAccessUtilities
             return report;
         }
 
+        /// <summary>
+        /// Secondary method that handles parsing the MtrHop data into the MtrReport's Hops List
+        /// </summary>
+        /// <param name="report"></param>
+        /// <param name="linesInReport"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         private static MtrReport StandardMtrParse(MtrReport report, List<string> linesInReport)
         {
             try

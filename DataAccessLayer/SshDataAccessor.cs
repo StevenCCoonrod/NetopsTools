@@ -12,6 +12,15 @@ using System.Text.RegularExpressions;
 
 namespace DataAccessLayer
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
+    /// This is the Data Access Class to retrieve data via SSH commands and return Data Objects
+    ///     to the SSH Data Manager.
+    ///     All methods build a specific SSH command, 
+    ///     and runs it through the RunClientCommand method.
+    ///     Connection info and parsing methods are housed in SSHAccessUtilities.
+    /// </summary>
     public class SshDataAccessor : ISshDataAccessor 
     {
         private string _host = SshAccessUtilities._host;
@@ -20,12 +29,10 @@ namespace DataAccessLayer
         private string _rootMtrDirectory = SshAccessUtilities._rootMtrDirectory;
         
         
-        
-        /*
-         * 
-         * Builds a command to retrieve a list of all the syncboxes listed in the Mtr directory
-         * 
-         */
+        /// <summary>
+        /// Builds a command to retrieve a list of ALL the Syncboxes listed in the Mtr directory
+        /// </summary>
+        /// <returns></returns>
         public List<string> GetAllSyncboxes()
         {
             List<string> syncboxes = new List<string>();
@@ -45,34 +52,15 @@ namespace DataAccessLayer
             return syncboxesUpper;
         }
 
+        
 
-        /*
-         * 
-         * TESTING METHOD:
-         * Uses a hardcoded file path
-         * Simple test method to retrieve data from a specific log file
-         * and parse the data returned into an MtrReport object.
-         * 
-         */
-        public MtrReport GetMtrReport()
-        {
-            MtrReport report = new MtrReport();
-            string command = "cat /var/log/syncbak/catcher-mtrs/2022/04/17/kxly-2309/kxly-2309-2022-04-17-03-07-dc-mtr-catcher.log";
-            string output = RunClientCommand(command);
-
-            report = SshAccessUtilities.parseSshStringIntoMtrReport(output, DateTime.Now);
-
-            return report;
-        }
-
-
-        /*
-         * 
-         * Method which gets the current datetime and builds a command
-         * to retrieve the most recent MTR log in the directory
-         * for that date and Syncbox
-         * 
-         */
+        /// <summary>
+        /// Gets the current datetime and builds a command
+        ///     to retrieve the most recent MTR log in the directory
+        ///     for that date and Syncbox
+        /// </summary>
+        /// <param name="syncboxID"></param>
+        /// <returns></returns>
         public MtrReport GetMostRecentMtrReport(string syncboxID)
         {
             MtrReport report = new MtrReport();
@@ -118,13 +106,31 @@ namespace DataAccessLayer
             return report;
         }
 
+        /// <summary>
+        /// ****TESTING METHOD****
+        /// Uses a hardcoded file path
+        /// Simple test method to retrieve data from a specific Mtr log file
+        /// and parse the data returned into an MtrReport object.
+        /// </summary>
+        /// <returns></returns>
+        public MtrReport GetMtrReport()
+        {
+            MtrReport report = new MtrReport();
+            string command = "cat /var/log/syncbak/catcher-mtrs/2022/04/17/kxly-2309/kxly-2309-2022-04-17-03-07-dc-mtr-catcher.log";
+            string output = RunClientCommand(command);
 
-        /**
-         * 
-         * Simple SSH Client Connection
-         * Takes in the command to be sent to the SSH server
-         * 
-         */
+            report = SshAccessUtilities.parseSshStringIntoMtrReport(output, DateTime.Now);
+
+            return report;
+        }
+
+        /// <summary>
+        /// Simple SSH Client Connection
+        /// Takes in the command to be sent to the SSH server
+        /// Returns the string output returned by the command
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         private string RunClientCommand(string command)
         {
             string dataReturned = "";

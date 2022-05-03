@@ -14,6 +14,11 @@ using System.Text.RegularExpressions;
 
 namespace WPFPresentationLayer
 {
+    /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/26
+    /// Provides UI utility methods for the WPF Presentation Layer
+    /// </summary>
     internal static class WPFUtilities
     {
 
@@ -30,7 +35,7 @@ namespace WPFPresentationLayer
         /// <returns></returns>
         public static string[] GetAllMtrs(List<string> syncboxes)
         {
-            SshDataManager tempDataManager = new SshDataManager();
+            SshDataManager tempDataManager = new SshDataManager();// Not a great implementation I know...
             string[] updateString = new string[2];
             try
             {
@@ -63,6 +68,11 @@ namespace WPFPresentationLayer
             return updateString;
         }
 
+        /// <summary>
+        /// Regex string validation method to ensure an [abcd] or [abcd-1234] pattern
+        /// </summary>
+        /// <param name="stationIdInput"></param>
+        /// <returns></returns>
         public static bool ValidateSyncboxIDinput(string stationIdInput)
         {
             bool isValid = false;

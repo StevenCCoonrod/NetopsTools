@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
-    public class MtrReport
+	/// <summary>
+	/// CREATOR: Steve C
+	/// Created: 2022/04/20
+	/// Data Object class for an Mtr Report.
+	/// </summary>
+	public class MtrReport
     {
 		public int MtrReportID { get; set; }
 		public string? SyncboxID { get; set; }
 		public DateTime UTCStartTime { get; set; }
 		public List<MtrHop> Hops { get; set; } = new List<MtrHop>();
-		
-		
-		
 		
 		
 		override

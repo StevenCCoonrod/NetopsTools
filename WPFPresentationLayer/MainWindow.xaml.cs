@@ -22,6 +22,8 @@ using LogicLayerInterfaces;
 namespace WPFPresentationLayer
 {
     /// <summary>
+    /// CREATOR: Steve C
+    /// Created: 2022/04/20
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
@@ -31,6 +33,11 @@ namespace WPFPresentationLayer
         public List<string> _syncboxList;
         public List<MtrReport> _MtrReportList;
 
+        /// <summary>
+        /// CONSTRUCTOR
+        /// Primary instantiation of SSH and SQL Data Managers
+        /// Population of UI with Data Objects
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -40,7 +47,6 @@ namespace WPFPresentationLayer
             try
             {
                 _syncboxList = _sshDataManager.GetAllSyncboxes();
-
                 _MtrReportList = getAllSqlDbMtrReports();
             }
             catch (Exception ex)
@@ -52,20 +58,20 @@ namespace WPFPresentationLayer
 
             if(_MtrReportList != null)
             {
-                
-                
                 lstMtrData.ItemsSource = _MtrReportList.Distinct().OrderBy(x => x.SyncboxID)
                     .ThenByDescending(x => x.UTCStartTime);
-                
-
-                
             }
-            
 
             cboSyncboxes.ItemsSource = _syncboxList;
-
+            cboStationId.ItemsSource = _syncboxList;
         }
 
+        /// <summary>
+        /// Private method called by the constructor.
+        /// Returns a list of ALL Mtrs in the DB
+        /// Writes any errors that occur to an error log file
+        /// </summary>
+        /// <returns></returns>
         private List<MtrReport> getAllSqlDbMtrReports()
         {
             List<MtrReport> list = new List<MtrReport>();
@@ -84,7 +90,7 @@ namespace WPFPresentationLayer
         }
 
         /// <summary>
-        /// Calls a Test Method and outputs to txtDataReturned box
+        /// Calls a TEST METHOD and outputs to txtDataReturned box
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -95,7 +101,7 @@ namespace WPFPresentationLayer
         }
 
         /// <summary>
-        /// Calls SSH Manager method to get the newest Mtr for a syncbox provided by the txtStationID box
+        /// Calls SSH Manager method to get the newest Mtr for a syncbox provided in the txtStationID box
         /// When provided 'true' the method inserts the Mtr Record into the Sql DB
         /// Outputs the Mtr to the txtDataReturned box
         /// </summary>
@@ -104,15 +110,12 @@ namespace WPFPresentationLayer
         private void btnGetNewestMtr_Click(object sender, RoutedEventArgs e)
         {
             txtDataReturned.Text = "";
-            bool validSyncboxID = WPFUtilities.ValidateSyncboxIDinput(txtStationId.Text);
-            if (validSyncboxID)
-            {
-                txtDataReturned.Text = _sshDataManager.GetNewestMtrReport(txtStationId.Text.ToLower(), true).ToString();
-            }
             
+                lblStationIDError.Visibility = Visibility.Hidden;
+                txtDataReturned.Text = _sshDataManager.GetNewestMtrReport(cboStationId.Text.ToLower(), true).ToString();
+                lblStationIDError.Visibility = Visibility.Visible;
         }
 
-        
 
         /// <summary>
         /// Gets all the newest Mtrs for every syncbox and inserts all records into the Sql DB
@@ -121,7 +124,6 @@ namespace WPFPresentationLayer
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
         private void btnGetAllNewMtrs_Click(object sender, RoutedEventArgs e)
         {
             txtDataReturned.Text = "Beginning Mtr Sweep...\n\n";
@@ -175,19 +177,26 @@ namespace WPFPresentationLayer
             }// End for loop
         }// End btnGetAllNewMtrs_Click Event
 
+        /// <summary>
+        /// Handles the Selection of a syncbox in the Combo Box
+        ///     Resets the Mtr datagrid to filter the Mtr List distictly for the specified syncbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cboSyncboxes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             lstMtrData.ItemsSource = _MtrReportList.Where(x => x.SyncboxID == cboSyncboxes.SelectedItem.ToString()).DistinctBy(x => x.MtrReportID).ToList();
         }
 
+        /// <summary>
+        /// This button updates and resets the Full Mtr List to the datagrid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnUpdateDataGrid_AllMtrs_Click(object sender, RoutedEventArgs e)
         {
             _MtrReportList = getAllSqlDbMtrReports();
             lstMtrData.ItemsSource = _MtrReportList.Distinct().OrderBy(x => x.SyncboxID).ThenByDescending(x => x.UTCStartTime);
-
-            
-
-            
         }
 
     }// End MainWindow Class
