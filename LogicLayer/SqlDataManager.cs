@@ -48,5 +48,48 @@ namespace LogicLayer
             return mtrReports;
         }
 
+        /// <summary>
+        /// Search method to retrieve all mtrs for ALL Syncboxes between 2 dates
+        /// </summary>
+        /// <param name="startTime"></param>
+        /// <param name="endTime"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<MtrReport> GetAllMtrsWithinRange(DateTime startTime, DateTime endTime)
+        {
+            List<MtrReport> reports = new List<MtrReport>();
+            try
+            {
+                reports = sqlDataAccessor.GetAllMtrsWithinRange(startTime, endTime);
+            }catch(Exception ex)
+            {
+                throw new Exception("There is an error accessing the Mtr data in the DB.\n"
+                    + ex.Message + "\n" + ex.InnerException + "\n");
+            }
+            return reports;
+        }
+
+        /// <summary>
+        /// Search method to retrieve all mtrs for a specific Syncbox between 2 dates
+        /// </summary>
+        /// <param name="targetSyncbox"></param>
+        /// <param name="startTime"></param>
+        /// <param name="endTime"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public List<MtrReport> GetSyncboxMtrsWithinRange(string? targetSyncbox, DateTime startTime, DateTime endTime)
+        {
+            List<MtrReport> reports = new List<MtrReport>();
+            try
+            {
+                reports = sqlDataAccessor.GetSyncboxMtrsWithinRange(targetSyncbox, startTime, endTime);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("There is an error accessing the Mtr data in the DB.\n"
+                    + ex.Message + "\n" + ex.InnerException + "\n");
+            }
+            return reports;
+        }
     }
 }

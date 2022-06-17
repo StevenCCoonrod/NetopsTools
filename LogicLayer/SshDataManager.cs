@@ -55,7 +55,7 @@ namespace LogicLayer
                             bool successful = _sqlDataAccesor.InsertNewMtrReport(report);
                             if (!successful)
                             {
-                                throw new Exception("Attempt to insert Mrt Report into database failed.\n");
+                                throw new Exception("Attempt to insert Mtr Report into database failed.\n");
                             }
                             else
                             {

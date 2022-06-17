@@ -245,6 +245,160 @@ namespace DataAccessLayer
             return mtrReports;
         }
 
+        /// <summary>
+        /// Search method to retrieve all mtrs for ALL Syncboxes between 2 dates
+        /// </summary>
+        /// <param name="startTime"></param>
+        /// <param name="endTime"></param>
+        /// <returns></returns>
+        public List<MtrReport> GetAllMtrsWithinRange(DateTime startTime, DateTime endTime)
+        {
+            List<MtrReport> mtrReports = new List<MtrReport>();
 
+            var conn = DBConnection.GetConnection();
+            var cmd = new SqlCommand("sp_SelectAllMtrsWithinRange", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@StartDatetime", startTime);
+            cmd.Parameters.AddWithValue("@EndDatetime", endTime);
+
+            try
+            {
+                MtrReport report = new MtrReport();
+
+                conn.Open();
+                var reader1 = cmd.ExecuteReader();
+                while (reader1.Read())
+                {
+                    if (reader1.GetInt32(0) == report.MtrReportID)// Existing MtrReport
+                    {
+                        MtrHop mtrHop = new MtrHop();
+                        mtrHop.MtrHopID = reader1.GetInt32(3);
+                        mtrHop.HopNum = reader1.GetByte(4);
+                        mtrHop.Host = reader1.GetString(5);
+                        mtrHop.PacketLoss = reader1.GetDecimal(6);
+                        mtrHop.PacketsSent = reader1.GetByte(7);
+                        mtrHop.LastPingMS = reader1.GetDecimal(8);
+                        mtrHop.AvgPingMS = reader1.GetDecimal(9);
+                        mtrHop.BestPingMS = reader1.GetDecimal(10);
+                        mtrHop.WorstPingMS = reader1.GetDecimal(11);
+                        mtrHop.StDev = reader1.GetDecimal(12);
+                        report.Hops.Add(mtrHop);
+                    }
+                    else // NEW MtrReport
+                    {
+                        report = new MtrReport();
+
+                        report.MtrReportID = reader1.GetInt32(0);
+                        report.SyncboxID = reader1.GetString(1);
+                        report.UTCStartTime = reader1.GetDateTime(2);
+
+                        MtrHop mtrHop = new MtrHop();
+                        mtrHop.MtrHopID = reader1.GetInt32(3);
+                        mtrHop.HopNum = reader1.GetByte(4);
+                        mtrHop.Host = reader1.GetString(5);
+                        mtrHop.PacketLoss = reader1.GetDecimal(6);
+                        mtrHop.PacketsSent = reader1.GetByte(7);
+                        mtrHop.LastPingMS = reader1.GetDecimal(8);
+                        mtrHop.AvgPingMS = reader1.GetDecimal(9);
+                        mtrHop.BestPingMS = reader1.GetDecimal(10);
+                        mtrHop.WorstPingMS = reader1.GetDecimal(11);
+                        mtrHop.StDev = reader1.GetDecimal(12);
+                        report.Hops.Add(mtrHop);
+                    }
+
+                    mtrReports.Add(report);
+                }
+                reader1.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return mtrReports;
+        }
+
+        /// <summary>
+        /// Search method to retrieve all mtrs for a specific Syncbox between 2 dates
+        /// </summary>
+        /// <param name="targetSyncbox"></param>
+        /// <param name="startTime"></param>
+        /// <param name="endTime"></param>
+        /// <returns></returns>
+        public List<MtrReport> GetSyncboxMtrsWithinRange(string? targetSyncbox, DateTime startTime, DateTime endTime)
+        {
+            List<MtrReport> mtrReports = new List<MtrReport>();
+
+            var conn = DBConnection.GetConnection();
+            var cmd = new SqlCommand("sp_SelectSyncboxMtrsWithinRange", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@SyncboxID", targetSyncbox);
+            cmd.Parameters.AddWithValue("@StartDatetime", startTime);
+            cmd.Parameters.AddWithValue("@EndDatetime", endTime);
+
+            try
+            {
+                MtrReport report = new MtrReport();
+
+                conn.Open();
+                var reader1 = cmd.ExecuteReader();
+                while (reader1.Read())
+                {
+                    if (reader1.GetInt32(0) == report.MtrReportID)// Existing MtrReport
+                    {
+                        MtrHop mtrHop = new MtrHop();
+                        mtrHop.MtrHopID = reader1.GetInt32(3);
+                        mtrHop.HopNum = reader1.GetByte(4);
+                        mtrHop.Host = reader1.GetString(5);
+                        mtrHop.PacketLoss = reader1.GetDecimal(6);
+                        mtrHop.PacketsSent = reader1.GetByte(7);
+                        mtrHop.LastPingMS = reader1.GetDecimal(8);
+                        mtrHop.AvgPingMS = reader1.GetDecimal(9);
+                        mtrHop.BestPingMS = reader1.GetDecimal(10);
+                        mtrHop.WorstPingMS = reader1.GetDecimal(11);
+                        mtrHop.StDev = reader1.GetDecimal(12);
+                        report.Hops.Add(mtrHop);
+                    }
+                    else // NEW MtrReport
+                    {
+                        report = new MtrReport();
+
+                        report.MtrReportID = reader1.GetInt32(0);
+                        report.SyncboxID = reader1.GetString(1);
+                        report.UTCStartTime = reader1.GetDateTime(2);
+
+                        MtrHop mtrHop = new MtrHop();
+                        mtrHop.MtrHopID = reader1.GetInt32(3);
+                        mtrHop.HopNum = reader1.GetByte(4);
+                        mtrHop.Host = reader1.GetString(5);
+                        mtrHop.PacketLoss = reader1.GetDecimal(6);
+                        mtrHop.PacketsSent = reader1.GetByte(7);
+                        mtrHop.LastPingMS = reader1.GetDecimal(8);
+                        mtrHop.AvgPingMS = reader1.GetDecimal(9);
+                        mtrHop.BestPingMS = reader1.GetDecimal(10);
+                        mtrHop.WorstPingMS = reader1.GetDecimal(11);
+                        mtrHop.StDev = reader1.GetDecimal(12);
+                        report.Hops.Add(mtrHop);
+                    }
+
+                    mtrReports.Add(report);
+                }
+                reader1.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return mtrReports;
+        }
     }
 }

@@ -23,6 +23,10 @@ namespace WPFPresentationLayer
     {
 
         public static string _errorLogFilePath = Directory.GetParent(path: Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName + "/mtrErrorLog.txt";
+        public static List<int> Hours {get; set;} = new List<int>() { 1,2,3,4,5,6,7,8,9,10,11,12 };
+        public static List<int> Minutes { get; set; } = new List<int>() { 00, 05, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 };
+        public static List<string> amPM { get; set; } = new List<string> { "AM", "PM" };
+
 
         /// <summary>
         /// Takes as a parameter a list of syncboxes and calls the SSH manager's method

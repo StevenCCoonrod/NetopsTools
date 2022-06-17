@@ -19,5 +19,7 @@ namespace DataAccessInterfaces
         bool InsertNewReportHops(MtrReport report);
 
         List<MtrReport> GetAllMtrs();
+        List<MtrReport> GetAllMtrsWithinRange(DateTime startTime, DateTime endTime);
+        List<MtrReport> GetSyncboxMtrsWithinRange(string? targetSyncbox, DateTime startTime, DateTime endTime);
     }
 }

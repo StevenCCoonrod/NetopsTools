@@ -89,34 +89,7 @@ namespace WPFPresentationLayer
             return list;
         }
 
-        /// <summary>
-        /// Calls a TEST METHOD and outputs to txtDataReturned box
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnGetData_Click(object sender, RoutedEventArgs e)
-        {
-            txtDataReturned.Text = "";
-            txtDataReturned.Text = _sshDataManager.GetMtrReport(true).ToString();
-        }
-
-        /// <summary>
-        /// Calls SSH Manager method to get the newest Mtr for a syncbox provided in the txtStationID box
-        /// When provided 'true' the method inserts the Mtr Record into the Sql DB
-        /// Outputs the Mtr to the txtDataReturned box
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnGetNewestMtr_Click(object sender, RoutedEventArgs e)
-        {
-            txtDataReturned.Text = "";
-            
-                lblStationIDError.Visibility = Visibility.Hidden;
-                txtDataReturned.Text = _sshDataManager.GetNewestMtrReport(cboStationId.Text.ToLower(), true).ToString();
-                lblStationIDError.Visibility = Visibility.Visible;
-        }
-
-
+        
         /// <summary>
         /// Gets all the newest Mtrs for every syncbox and inserts all records into the Sql DB
         /// It currently also outputs all the data returned to the txtDataReturned box 
@@ -198,6 +171,147 @@ namespace WPFPresentationLayer
             _MtrReportList = getAllSqlDbMtrReports();
             lstMtrData.ItemsSource = _MtrReportList.Distinct().OrderBy(x => x.SyncboxID).ThenByDescending(x => x.UTCStartTime);
         }
+
+        
+        /// <summary>
+        /// Click event for the button to search through mtr data
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSearchReports_Click(object sender, RoutedEventArgs e)
+        {
+            
+            if (chkUseSearchDates.IsChecked == true) //Search Using Dates
+            {
+                List<DateTime> searchDates = validateSearchDates();
+
+                DateTime startTime = searchDates[0];
+                DateTime endTime = searchDates[1];
+
+                List<MtrReport> searchResult = new List<MtrReport>();
+
+                if (cboStationId.SelectedIndex == -1) //Search reports for all syncboxes
+                {
+                    try
+                    {
+                        searchResult = _sqlDataManager.GetAllMtrsWithinRange(startTime, endTime);
+                        lstMtrData.ItemsSource = searchResult.Distinct().OrderBy(x => x.SyncboxID).ThenByDescending(x => x.UTCStartTime);
+
+                        txtDataReturned.Text = "# of Reports between " + startTime.ToString() + " and " + endTime.ToString() + ": " + searchResult.Distinct().Count();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else if(cboStationId.SelectedIndex != -1) //Search By SyncboxID
+                {
+                    //Search reports for a specific station
+                    string targetSyncbox = cboStationId.SelectedItem.ToString();
+                    try
+                    {
+                        searchResult = _sqlDataManager.GetSyncboxMtrsWithinRange(targetSyncbox, startTime, endTime);
+                        lstMtrData.ItemsSource = searchResult.Distinct().OrderByDescending(x => x.UTCStartTime);
+
+                        txtDataReturned.Text = "# of Reports for " + targetSyncbox 
+                            + " between " + startTime.ToString() + " and " + endTime.ToString() + ": " + searchResult.Distinct().Count();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            else if(cboStationId.SelectedIndex != -1) //Search by SyncboxID, NO DATES
+            {
+                lstMtrData.ItemsSource = _MtrReportList.Distinct().ToList().Where(x => x.SyncboxID == cboStationId.SelectedItem.ToString()).ToList();
+            }
+        }
+
+        /// <summary>
+        /// Helper method to validate the dates in the search fields
+        /// </summary>
+        /// <returns></returns>
+        private List<DateTime> validateSearchDates()
+        {
+            List<DateTime> dateTimes = new List<DateTime>();
+
+            DateTime startDate, endDate;
+
+            startDate = DateTime.Parse(dateStart.SelectedDate.ToString().Split(" ").First()
+                        + " " + dateStartHour.SelectedValue.ToString()
+                        + ":" + dateStartMinute.SelectedValue.ToString()
+                        + " " + dateStartAMPM.SelectedValue.ToString());
+            dateTimes.Add(startDate);
+                
+            endDate = DateTime.Parse(dateEnd.SelectedDate.ToString().Split(" ").First()
+                        + " " + dateEndHour.SelectedValue.ToString()
+                        + ":" + dateEndMinute.SelectedValue.ToString()
+                        + " " + dateEndAMPM.SelectedValue.ToString());
+            dateTimes.Add(endDate);
+            
+
+            return dateTimes;
+        }
+
+        /// <summary>
+        /// Helper method to reset all search fields to defaults
+        /// </summary>
+        private void ResetSearchFields()
+        {
+            dateStart.SelectedDate = DateTime.Now.AddDays(-1);
+            dateStartHour.ItemsSource = WPFUtilities.Hours;
+            dateStartHour.SelectedIndex = 0;
+            dateStartMinute.ItemsSource = WPFUtilities.Minutes;
+            dateStartMinute.SelectedIndex = 0;
+            dateStartAMPM.ItemsSource = WPFUtilities.amPM;
+            dateStartAMPM.SelectedIndex = 0;
+
+            dateEnd.SelectedDate = DateTime.Now;
+            dateEndHour.ItemsSource = WPFUtilities.Hours;
+            dateEndHour.SelectedIndex = 0;
+            dateEndMinute.ItemsSource = WPFUtilities.Minutes;
+            dateEndMinute.SelectedIndex = 0;
+            dateEndAMPM.ItemsSource = WPFUtilities.amPM;
+            dateEndAMPM.SelectedIndex = 0;
+
+            cboStationId.SelectedIndex = -1;
+        }
+
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            ResetSearchFields();
+        }
+
+
+        /// <summary>
+        /// Calls a TEST METHOD and outputs to txtDataReturned box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        //private void btnGetData_Click(object sender, RoutedEventArgs e)
+        //{
+        //    txtDataReturned.Text = "";
+        //    txtDataReturned.Text = _sshDataManager.GetMtrReport(true).ToString();
+        //}
+
+        /// <summary>
+        /// Calls SSH Manager method to get the newest Mtr for a syncbox provided in the txtStationID box
+        /// When provided 'true' the method inserts the Mtr Record into the Sql DB
+        /// Outputs the Mtr to the txtDataReturned box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        //private void btnGetNewestMtr_Click(object sender, RoutedEventArgs e)
+        //{
+        //    txtDataReturned.Text = "";
+
+        //        lblStationIDError.Visibility = Visibility.Hidden;
+        //        txtDataReturned.Text = _sshDataManager.GetNewestMtrReport(cboStationId.Text.ToLower(), true).ToString();
+        //        lblStationIDError.Visibility = Visibility.Visible;
+        //}
+
 
     }// End MainWindow Class
 }

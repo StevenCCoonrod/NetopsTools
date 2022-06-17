@@ -20,8 +20,8 @@ namespace DataAccessUtilities
     {
         //Connection Info
         public static string _host = "master3.syncbak.com";
-        public static string _user = "usernameGoesHere";
-        public static string _pass = "passwordGoesHere";
+        public static string _user = "";
+        public static string _pass = "";
         public static string _rootMtrDirectory = "/var/log/syncbak/catcher-mtrs";
 
         /// <summary>

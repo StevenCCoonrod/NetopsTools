@@ -446,3 +446,1983 @@ A network-related or instance-specific error occurred while establishing a conne
 
 
 
+There is an error accessing the Mtr data in the DB.
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Sat Jun 4 19:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue Jun 7 05:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue May 3 19:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 05:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 13:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon Jun 6 22:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue May 3 19:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon Jun 6 22:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:52:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed Jun 8 13:57:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Sun Apr 3 19:57:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:57:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:57:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:57:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Apr 8 00:02:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed Jun 8 07:02:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:02:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Feb 3 16:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed May 4 06:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 23:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 23:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed May 4 06:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:17:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 05:17:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Sun Jun 5 11:17:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Sun Jun 5 02:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed Jun 8 05:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Apr 8 12:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 03:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon May 9 11:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue May 3 11:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 02:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:52:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 140
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.NoStartMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 84
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 134
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 141
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu May 5 12:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 23:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Apr 8 00:22:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue Feb 8 18:22:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:22:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Jun 3 18:22:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 9 23:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 03:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue May 3 11:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Jun 3 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Jun 3 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Sun Jun 5 02:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed Jun 8 05:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Jun 2 05:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 03:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon May 9 11:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Apr 8 12:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:37:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Jun 3 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed Mar 2 19:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:32:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu May 5 12:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu May 5 12:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon Feb 7 06:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 23:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 02:42:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon Jun 6 22:47:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.NoStartMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 84
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 144
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 134
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed May 4 06:07:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu May 5 12:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon Feb 7 06:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu May 5 12:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Mon Feb 7 06:12:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Wed May 4 03:17:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Apr 8 00:22:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Tue May 3 11:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Thu Apr 7 03:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Jun 3 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Fri Jun 3 06:27:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Error parsing Data!
+Unable to retrieve Mtr data.
+
+System.FormatException: String 'Sun Jun 5 11:17:01 2022' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at DataAccessUtilities.SshAccessUtilities.StandardMtrParse(MtrReport report, List`1 linesInReport) in F:\Steves Stuff\RandomHouse\SoftwareProjects\dotNet\NetopsTools\DataAccessUtilities\SshAccessUtilities.cs:line 117
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

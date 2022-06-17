@@ -140,3 +140,67 @@ END
 GO
 
 
+CREATE PROCEDURE [sp_SelectAllMtrsWithinRange]
+(
+	@StartDatetime		[DATETIME],
+	@EndDatetime		[DATETIME]
+)
+AS
+BEGIN
+	SELECT 	[dbo].[MtrReport].[MtrReportID],
+			[SyncboxID],
+			[StartTime],
+			[dbo].[MtrHop].[MtrHopID],
+			[HopNumber],
+			[HostName],
+			[PacketLoss],
+			[PacketsSent],
+			[LastPingMS],
+			[AvgPingMS],
+			[BestPingMS],
+			[WorstPingMS],
+			[StandardDev]
+	FROM	[dbo].[MtrHop]
+			INNER JOIN [dbo].[MtrReportHops]
+		ON	[dbo].[MtrHop].[MtrHopID] = [dbo].[MtrReportHops].[MtrHopID]
+			INNER JOIN [dbo].[MtrReport]
+		ON	[dbo].[MtrReport].[MtrReportID] = [dbo].[MtrReportHops].[MtrReportID]
+	WHERE 	[MtrReport].[StartTime] >= @StartDatetime
+	AND		[MtrReport].[StartTime] <= @EndDatetime
+	ORDER BY [MtrReportID], [MtrHopID]
+END
+GO
+
+CREATE PROCEDURE [sp_SelectSyncboxMtrsWithinRange]
+(
+	@SyncboxID			[NVARCHAR](12),
+	@StartDatetime		[DATETIME],
+	@EndDatetime		[DATETIME]
+)
+AS
+BEGIN
+	SELECT 	[dbo].[MtrReport].[MtrReportID],
+			[SyncboxID],
+			[StartTime],
+			[dbo].[MtrHop].[MtrHopID],
+			[HopNumber],
+			[HostName],
+			[PacketLoss],
+			[PacketsSent],
+			[LastPingMS],
+			[AvgPingMS],
+			[BestPingMS],
+			[WorstPingMS],
+			[StandardDev]
+	FROM	[dbo].[MtrHop]
+			INNER JOIN [dbo].[MtrReportHops]
+		ON	[dbo].[MtrHop].[MtrHopID] = [dbo].[MtrReportHops].[MtrHopID]
+			INNER JOIN [dbo].[MtrReport]
+		ON	[dbo].[MtrReport].[MtrReportID] = [dbo].[MtrReportHops].[MtrReportID]
+	WHERE 	[SyncboxID] = @SyncboxID
+	AND		[MtrReport].[StartTime] >= @StartDatetime
+	AND		[MtrReport].[StartTime] <= @EndDatetime
+	ORDER BY [MtrReportID], [MtrHopID]
+END
+GO
+

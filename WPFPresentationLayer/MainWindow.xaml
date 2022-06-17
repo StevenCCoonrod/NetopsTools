@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFPresentationLayer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1200" Background="#BB102040" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="800" Width="1200" 
+            Background="#BB102040" ResizeMode="CanMinimize"
+            WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Window.Resources>
         <Style x:Key="dataGridStyle1" TargetType="DataGrid">
             <Setter Property="ColumnHeaderStyle" Value="{DynamicResource ColumnHeaderStyle1}" />
@@ -19,165 +21,212 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"></RowDefinition>
-            <RowDefinition Height="15*"></RowDefinition>
-            <RowDefinition Height="15*"></RowDefinition>
-            <RowDefinition Height="15*"></RowDefinition>
-            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
             <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="25*"></RowDefinition>
-                <RowDefinition Height="75*"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="25*"></ColumnDefinition>
-                    <ColumnDefinition Width="50*"></ColumnDefinition>
-                    <ColumnDefinition Width="25*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="25*"></RowDefinition>
-                    <RowDefinition Height="25*"></RowDefinition>
-                    <RowDefinition Height="25*"></RowDefinition>
-                    <RowDefinition Height="25*"></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBlock Grid.Column="2" Grid.RowSpan="3" Margin="10" FontSize="12"
-                       Background="AliceBlue" TextWrapping="Wrap"
-                       Text="These buttons retrieve data through SSH and inserts it into the SQL DB">
-                </TextBlock>
-                
-                <Label x:Name="lblStationIDError" Grid.Row="0" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
-                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
-                <Label x:Name="lblStationID" Grid.Row="0" Grid.Column="0" Foreground="LightGray" FontSize="16" 
-                    VerticalAlignment="Center" HorizontalAlignment="Right" Content="Station ID">
-                </Label>
-                <ComboBox x:Name="cboStationId" 
-                    Grid.Row="0" 
-                    Grid.Column="1" 
-                    Height="25" 
-                    VerticalAlignment="Center"
-                    Background="AliceBlue" 
-                    IsTextSearchEnabled="True"
-                    Margin="3, 0, 3, 0"></ComboBox>
-                
-                <Label x:Name="lblStartDateError" Grid.Row="1" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
-                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
-                <Label Grid.Row="1" Grid.Column="0" Foreground="LightGray" FontSize="16" 
-                    VerticalAlignment="Center" HorizontalAlignment="Right">Start Date</Label>
-                <DatePicker x:Name="dateStart" Grid.Column="1" Grid.Row="1" BorderBrush="Transparent"
-                    VerticalAlignment="Center"></DatePicker>
-                
-                <Label x:Name="lblEndDateError" Grid.Row="0" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
-                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
-                <Label Grid.Row="2" Grid.Column="0" Foreground="LightGray" FontSize="16" 
-                    VerticalAlignment="Center" HorizontalAlignment="Right">End Date</Label>
-                <DatePicker x:Name="dateEnd" Grid.Column="1" Grid.Row="2" BorderBrush="Transparent"
-                    VerticalAlignment="Center"></DatePicker>
-
-                <Button x:Name="btnGetData" 
-                    Grid.Column="0" 
-                    Grid.Row="3" 
-                    Margin="5"
-                    Click="btnGetData_Click">Get Data</Button>
-                <Button x:Name="btnGetNewestMtr" 
-                    Grid.Column="1" 
-                    Grid.Row="3" 
-                    Margin="5"
-                    Click="btnGetNewestMtr_Click">Get Most Recent MTR</Button>
-                <Button x:Name="btnGetAllNewMtrs" 
-                    Grid.Column="2" 
-                    Grid.Row="3"
-                    Margin="5"
-                    Click="btnGetAllNewMtrs_Click"
-                    Background="#BBEE3030">ALL new Mtrs</Button>
-            </Grid>
-
-            <TextBox x:Name="txtDataReturned" 
-                     IsReadOnly="True"
-                     Grid.Row="1" 
-                     Background="#FF020220"
-                     Foreground="AliceBlue" 
-                     FontSize="10" 
-                     Margin="5"
-                     VerticalScrollBarVisibility="Auto"
-                     TextWrapping="WrapWithOverflow">
-            </TextBox>
-        </Grid>
-
-
-        <Grid Grid.Column="2" Grid.ColumnSpan="4">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <ComboBox x:Name="cboSyncboxes" Grid.Column="0"
-                      Height="30" FontSize="14" IsTextSearchEnabled="True"
-                      SelectionChanged="cboSyncboxes_SelectionChanged"></ComboBox>
-
-            <Button x:Name="btnUpdateDataGrid_AllMtrs" Grid.Column="1" 
-                    Height="30" Width="60" HorizontalAlignment="Left" Margin="10 0 0 0"
-                    Content="All Mtrs" Click="btnUpdateDataGrid_AllMtrs_Click"></Button>
-            
+            <Button x:Name="btnGetAllNewMtrs" 
+                    Grid.Column="6" 
+                    Margin="5"
+                    Click="btnGetAllNewMtrs_Click"
+                    Background="#BBEE3030">ALL new Mtrs</Button>
+            <ComboBox x:Name="cboSyncboxes" Grid.Column="7" Grid.ColumnSpan="2"
+                      Margin="40 5 40 5" FontSize="14" IsTextSearchEnabled="True"
+                        SelectionChanged="cboSyncboxes_SelectionChanged"></ComboBox>
+            <Button x:Name="btnUpdateDataGrid_AllMtrs" Grid.Column="9"
+                Margin="10 5 10 5" HorizontalAlignment="Center"
+                FontSize="10"
+                Content="Refresh List" Click="btnUpdateDataGrid_AllMtrs_Click"></Button>
         </Grid>
         
-        
-        
-        <Grid Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4" Grid.RowSpan="4">
-            <DataGrid x:Name="lstMtrData" Margin="5" Background="#FF020220" Foreground="AliceBlue"
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"></ColumnDefinition>
+                <ColumnDefinition Width="70*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Background="#80303080">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"></ColumnDefinition>
+                    <ColumnDefinition Width="20*"></ColumnDefinition>
+                    <ColumnDefinition Width="20*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="10*"></RowDefinition>
+                    <RowDefinition Height="70*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                
+                <Label x:Name="lblStationIDError" Grid.Row="0" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
+                    VerticalAlignment="Center" HorizontalAlignment="Left" 
+                    Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
+                <Label x:Name="lblStationID" Grid.Row="0" Grid.Column="0" Foreground="LightGray" 
+                       FontSize="16"
+                        VerticalAlignment="Center" HorizontalAlignment="Right" Content="Station ID">
+                </Label>
+                <ComboBox x:Name="cboStationId" 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    Height="25" MinWidth="120"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Background="AliceBlue" 
+                    IsTextSearchEnabled="True">
+                </ComboBox>
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*"></ColumnDefinition>
+                        <ColumnDefinition Width="70*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Grid.Column="0" 
+                              x:Name="chkUseSearchDates"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"></CheckBox>
+                    <TextBox Grid.Column="1" 
+                           Foreground="AliceBlue" FontSize="12" TextWrapping="Wrap"
+                           TextAlignment="Left" BorderThickness="0"
+                           VerticalAlignment="Center" Background="Transparent"
+                           Text="Use Search Dates"></TextBox>
+                </Grid>
+
+                <Label x:Name="lblStartDateError" Grid.Row="1" Grid.Column="0" Foreground="Red" FontSize="24" Background='Transparent'
+                    VerticalAlignment="Center" HorizontalAlignment="Left" Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
+                <Label Grid.Row="1" Grid.Column="0" Foreground="LightGray" FontSize="16" 
+                    VerticalAlignment="Center" HorizontalAlignment="Right">Start Date</Label>
+                <DatePicker x:Name="dateStart" Grid.Column="1" Grid.Row="1"
+                    BorderBrush="Transparent"
+                    VerticalAlignment="Center"></DatePicker>
+                <Grid Grid.Row="1" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox x:Name="dateStartHour" Grid.Column="0" Margin="5 10 0 10"></ComboBox>
+                    <ComboBox x:Name="dateStartMinute" Grid.Column="1" Margin="0 10 0 10"></ComboBox>
+                    <ComboBox x:Name="dateStartAMPM" Grid.Column="2" Margin="0 10 5 10"></ComboBox>
+                </Grid>
+                
+
+                <Label x:Name="lblEndDateError" Grid.Row="2" Grid.Column="0" Foreground="Red" 
+                    FontSize="24" Background='Transparent'
+                    VerticalAlignment="Center" HorizontalAlignment="Left" 
+                    Content="!" Margin="10 0 0 0" Visibility="Hidden"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Foreground="LightGray" FontSize="16" 
+                    VerticalAlignment="Center" HorizontalAlignment="Right">End Date</Label>
+                <DatePicker x:Name="dateEnd" Grid.Column="1" Grid.Row="2"
+                    BorderBrush="Transparent"
+                    VerticalAlignment="Center"></DatePicker>
+                <Grid Grid.Row="2" Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox x:Name="dateEndHour" Grid.Column="0" Margin="5 10 0 10"></ComboBox>
+                    <ComboBox x:Name="dateEndMinute" Grid.Column="1" Margin="0 10 0 10"></ComboBox>
+                    <ComboBox x:Name="dateEndAMPM" Grid.Column="2" Margin="0 10 5 10"></ComboBox>
+                </Grid>
+
+                <!--<Button x:Name="btnGetData" 
+                    Grid.Column="0" 
+                    Grid.Row="6" 
+                    Margin="5"
+                    Click="btnGetData_Click"
+                    Visibility="Hidden">Get Data</Button>-->
+                <!--<Button x:Name="btnGetNewestMtr" 
+                    Grid.Column="1" 
+                    Grid.Row="6" 
+                    Margin="5"
+                    Click="btnGetNewestMtr_Click"
+                    Visibility="Hidden">Get Most Recent MTR</Button>-->
+                <Button x:Name="btnSearchReports" 
+                    Grid.Column="1" 
+                    Grid.Row="5" 
+                    Margin="5" Click="btnSearchReports_Click">Search Reports</Button>
+                
+
+                <Grid Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3">
+
+                    <TextBox x:Name="txtDataReturned" 
+                    IsReadOnly="True"
+                    Grid.Row="1" 
+                    Background="#FF020220"
+                    Foreground="AliceBlue" 
+                    FontSize="10" 
+                    Margin="5"
+                    VerticalScrollBarVisibility="Auto"
+                    TextWrapping="WrapWithOverflow">
+                    </TextBox>
+                </Grid>
+
+
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="4">
+                <DataGrid x:Name="lstMtrData" Margin="5" Background="#FF020220" Foreground="AliceBlue"
                       FontSize="14" FontWeight="DemiBold" FontFamily="Helvetica" RowHeaderWidth="0"
                       CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" RowBackground="#FF020220"
                       SelectionMode="Single" IsTextSearchEnabled="True" AutoGenerateColumns="False"
                       Style="{DynamicResource dataGridStyle1}">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Syncbox" Binding="{Binding SyncboxID}" />
-                    <DataGridTemplateColumn x:Name="reportCol" Header="Mtr Reports">
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <ListView x:Name="lstSyncboxReports">
-                                    <ListViewItem Content="{Binding UTCStartTime}" ></ListViewItem>
-                                    
-                                </ListView>
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
-                    <!--<DataGridTextColumn Header="Start Time" Binding="{Binding UTCStartTime}" /> -->
-                </DataGrid.Columns>
-                
-                <DataGrid.RowDetailsTemplate>
-                    <DataTemplate>
-                        <ListView ItemsSource="{Binding Hops}" Margin="10" Background="#FF020220" Foreground="AliceBlue">
-                            <ListView.View>
-                                <GridView>
-                                    <GridViewColumn Header="Hop #" DisplayMemberBinding="{Binding HopNum}" Width="50"></GridViewColumn>
-                                    <GridViewColumn Header="Host " DisplayMemberBinding="{Binding Host}"></GridViewColumn>
-                                    <GridViewColumn Header="% Loss" DisplayMemberBinding="{Binding PacketLoss}" Width="50"></GridViewColumn>
-                                    <GridViewColumn Header="Last " DisplayMemberBinding="{Binding LastPingMS}" Width="50"></GridViewColumn>
-                                    <GridViewColumn Header=" Avg " DisplayMemberBinding="{Binding AvgPingMS}" Width="50"></GridViewColumn>
-                                    <GridViewColumn Header="Best " DisplayMemberBinding="{Binding BestPingMS}" Width="50"></GridViewColumn>
-                                    <GridViewColumn Header="Worst" DisplayMemberBinding="{Binding WorstPingMS}" Width="50"></GridViewColumn>
-                                </GridView>
-                            </ListView.View>
-                        </ListView>
-                    </DataTemplate>
-                </DataGrid.RowDetailsTemplate>
-            </DataGrid>
-            
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Syncbox" Binding="{Binding SyncboxID}" />
+                        <DataGridTemplateColumn x:Name="reportCol" Header="Mtr Reports">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ListView x:Name="lstSyncboxReports">
+                                        <ListViewItem Content="{Binding UTCStartTime}" ></ListViewItem>
+
+                                    </ListView>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <!--<DataGridTextColumn Header="Start Time" Binding="{Binding UTCStartTime}" /> -->
+                    </DataGrid.Columns>
+
+                    <DataGrid.RowDetailsTemplate>
+                        <DataTemplate>
+                            <ListView ItemsSource="{Binding Hops}" Margin="10" Background="#FF020220" Foreground="AliceBlue">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="Hop #" DisplayMemberBinding="{Binding HopNum}" Width="50"></GridViewColumn>
+                                        <GridViewColumn Header="Host " DisplayMemberBinding="{Binding Host}"></GridViewColumn>
+                                        <GridViewColumn Header="% Loss" DisplayMemberBinding="{Binding PacketLoss}" Width="50"></GridViewColumn>
+                                        <GridViewColumn Header="Last " DisplayMemberBinding="{Binding LastPingMS}" Width="50"></GridViewColumn>
+                                        <GridViewColumn Header=" Avg " DisplayMemberBinding="{Binding AvgPingMS}" Width="50"></GridViewColumn>
+                                        <GridViewColumn Header="Best " DisplayMemberBinding="{Binding BestPingMS}" Width="50"></GridViewColumn>
+                                        <GridViewColumn Header="Worst" DisplayMemberBinding="{Binding WorstPingMS}" Width="50"></GridViewColumn>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGrid.RowDetailsTemplate>
+                </DataGrid>
+
+            </Grid>
+
         </Grid>
+        
+        
     </Grid>
     
 </Window>
